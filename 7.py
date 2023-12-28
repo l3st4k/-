@@ -1,15 +1,12 @@
-A, B, C = int(input()), int(input()), int(input())
-CvA, CvB = 0, 0
-znach = 0
+A = int(input("Введите положительное число A: "))
+B = int(input("Введите положительное число B: "))
+C = int(input("Введите положительное число C: "))
 
+count = 0
 while A >= C:
     A -= C
-    CvA += 1
-
-while B >= C:
-    B -= C
-    CvB += 1
-
-for i in range(CvB):
-    znach += CvA
-print(znach)
+    B1 = B
+    while B1>= C:
+        B1 -= C
+        count += 1
+print (count)
